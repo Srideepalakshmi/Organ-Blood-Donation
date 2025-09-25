@@ -1,0 +1,138 @@
+/* === Container === */
+.agent-container {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f9;
+  min-height: 80.5vh;
+  padding: 40px 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* === Heading === */
+.dashboard-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f3c88;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.dashboard-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #1f3c88;
+  margin: 8px auto 0;
+  border-radius: 3px;
+}
+
+/* === Filter Box === */
+.filter-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.filter-box input {
+  border-radius: 6px;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  outline: none;
+  width: 280px;
+  transition: border 0.3s ease;
+}
+
+.filter-box input:focus {
+  border-color: #1f3c88;
+  box-shadow: 0 0 5px rgba(31, 60, 136, 0.4);
+}
+
+.filter-actions {
+  display: flex;
+  gap: 10px;
+  width: 280px;
+}
+
+.filter-actions button {
+  flex: 1;
+  padding: 10px 0;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.btn-primary {
+  background: #1f3c88;
+  border: none;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #16306d;
+}
+
+.btn-secondary {
+  background: #6c757d;
+  border: none;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background: #565e64;
+}
+
+/* === Donor Cards === */
+.agent-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: left;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+.card h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #820000;
+}
+
+.card p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+}
+
+.card b {
+  color: #1f3c88;
+}
+
+/* === Expired Card (older than 1 month) === */
+.card-expired {
+  border: 2px solid #dc3545 !important;
+  background: #ffe5e5 !important;
+}
+
+.expired-warning {
+  color: #b02a37;
+  font-weight: bold;
+  margin-top: 8px;
+}

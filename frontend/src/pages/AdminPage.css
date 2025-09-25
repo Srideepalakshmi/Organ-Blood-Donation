@@ -1,0 +1,109 @@
+/* === Layout === */
+.admin-container {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f9;
+  min-height: 100vh;
+  padding: 30px;
+  color: #333;
+}
+
+/* === Heading === */
+.admin-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1f3c88;
+}
+
+/* === Filter Box === */
+.filter-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.filter-box input {
+  border-radius: 6px;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.filter-box input:focus {
+  border-color: #1f3c88;
+  box-shadow: 0 0 5px rgba(31, 60, 136, 0.4);
+}
+
+.filter-box button {
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+/* === Cards === */
+.card {
+  background: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 auto 20px;
+  max-width: 650px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+.card h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #820000;
+}
+
+.card p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+}
+
+.card b {
+  color: #1f3c88;
+}
+
+/* === Role Badge === */
+.role-badge {
+  background: #1f3c88;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 3px 8px;
+  border-radius: 5px;
+  margin-left: 8px;
+}
+
+/* === Buttons === */
+.btn-danger {
+  background: linear-gradient(90deg, #642506, #35d3af);
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.btn-danger:hover {
+  background: #b02a37;
+}
+
+.btn-secondary {
+  background: #6c757d;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: #565e64;
+}
